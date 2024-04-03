@@ -14,8 +14,8 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	let volume = document.querySelector("#volume");
 	let slider = document.querySelector("#slider");
-	volume.innerHTML = slider.value;
-	video.volume = slider.value/100 + "%";
+	volume.innerHTML = slider.value + "%";
+	video.volume = slider.value/100;
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
